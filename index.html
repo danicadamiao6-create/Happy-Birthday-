@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, My Baby!</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            /* Lavender and Blue Gradient Background */
+            background: linear-gradient(135deg, #e6e6fa, #b0c4de, #e8f0fe);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            overflow-x: hidden;
+            text-align: center;
+            padding: 20px;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.92);
+            padding: 25px;
+            border-radius: 25px;
+            box-shadow: 0 10px 30px rgba(138, 43, 226, 0.2);
+            max-width: 480px;
+            width: 100%;
+            backdrop-filter: blur(10px);
+            z-index: 10;
+            border: 2px solid #b0c4de;
+            display: none; /* Itatago muna lahat ng pages */
+        }
+        /* Ipapakita lang ang aktibong page */
+        .card.active {
+            display: block;
+            animation: fadeIn 0.8s ease-in-out;
+        }
+        h1 {
+            color: #5d3fd3; /* Dark Lavender */
+            font-size: 2.2rem;
+            margin-bottom: 15px;
+        }
+        .tenor-gif {
+            width: 160px;
+            height: 160px;
+            object-fit: contain;
+            margin: 15px auto;
+            display: block;
+        }
+        /* 6 Photos Animated Grid (Naliligiran ang Text) */
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin: 20px 0;
+        }
+        .photo-frame {
+            aspect-ratio: 1;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 3px solid #fff;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            animation: bounceIn 1.5s ease-in-out infinite alternate;
+        }
+        .photo-frame:nth-child(even) { animation-duration: 2s; }
+        
+        .photo-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        p {
+            color: #333;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin: 15px 0;
+            font-weight: 500;
+        }
+        /* Next/Button Style */
+        .btn {
+            background: linear-gradient(135deg, #7b68ee, #4169e1);
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            border-radius: 20px;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(65, 105, 225, 0.4);
+            transition: 0.3s;
+            margin-top: 15px;
+        }
+        .btn:hover {
+            transform: scale(1.05);
+        }
+        /* Floating Elements */
+        .falling-item {
+            position: fixed;
+            top: -50px;
+            font-size: 24px;
+            animation: fall linear infinite;
+            z-index: 1;
+            pointer-events: none;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes bounceIn {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-6px); }
+        }
+        @keyframes fall {
+            0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+            100% { transform: translateY(105vh) rotate(360deg); opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="card active" id="page1">
+        <img class="tenor-gif" src="hmhttps://tenor.com/view/tkthao219-bubududu-gif-21416138" alt="Dudu">
+        <h1>Happy Birthday, Baby! 🌸</h1>
+        <button class="btn" onclick="nextPage(2)">Open My Gift 🎁</button>
+    </div>
+
+
+    <div class="card" id="page2">
+        <h1>For You, My Baby ✨</h1>
+        
+ 
+        <div class="photo-grid">
+            <div class="photo-frame"><img src="Messenger_creation_DB815A21-841E-4A6A-A394-C130ADF3740D.jpeg" alt="Pic 1"></div>
+            <div class="photo-frame"><img src="Messenger_creation_2E9F8F7D-94BE-4A6C-92E8-1AF82D1D9179.jpeg" alt="Pic 2"></div>
+            <div class="photo-frame"><img src="1777744622694.jpg" alt="Pic 3"></div>
+            <div class="photo-frame"><img src="1775900053405.jpg" alt="Pic 4"></div>
+            <div class="photo-frame"><img src="1762622974752.jpg" alt="Pic 5"></div>
+            <div class="photo-frame"><img src="1760628210486.jpg" alt="Pic 6"></div>
+        </div>
+
+<img class="tenor-gif" src="https://tenor.com" alt="Dudu Happy">
+
+  
+        <p>Happy birthday to my prettyyyy kyutiiii sexyyyy hotttt and lamiiiii kaayu nga baby nko murag ligad ramn Tah ka naka ila baby 16 paka atuh and subong 17 naka baby gamay nlng kulang ma legal age naka baby hehehe joke lng Po😁, bitaw baby thankful kaayu ko nakilala Tika Po maski random ra kaayu tuh nga chat Kay tungod Sako post HAHAHAHA subong naa nakay anak nga kulit kaayu samok pero kyutt kyutt e lambos HAHAHAHA grabih kaayu ko ka thankful nga ni abut ka sakong life baby naa Koy kaduolan and ka chikahan nga naa always sakong kiliran ga support iloveyoualways baby nko. Maski sagig kog cry simong pag ka avoidant baby always remember loveeee loveee ka sa bata baby and sabtun Tika always and forever baby nko stay rapo ko nimo baby accept nako og unsa kapo baby accept nako imong pag ka avoidant baby wala nmn ko ma say baby na speechless nako baby hehehe 😁 I'm so swerteh jud kaayu nimo baby I can't explain MN unsa ko ka swertih Po always rako naa arih Po baby I'm so proud Po nimo baby nko more birthday to come baby enjoy your day Po iloveyoualways baby nko always and forever.😘😘😘
+
+</p>
+        
+        <button class="btn" onclick="nextPage(3)">Next 💖</button>
+    </div>
+
+    <!-- 3rd PAGE: FINAL LOVE PAGE WITH DUDU KISS -->
+    <div class="card" id="page3">
+        <h1>I Love You So Much! 💋</h1>
+        <!-- Ito ang Tenor Dudu Kiss animation -->
+        <img class="tenor-gif" src="https://tenor.com" alt="Dudu Kiss">
+        <p>I LOVE YOU ALWAYS BABY😘😘😘</p>
+    </div>
+
+
+    <audio id="bgMusic" loop>
+        <source src="LoveTik.com - 오리지널 사운드 - MUSICDALIN.mp3.mp4" type="audio/mpeg">
+    </audio>
+
+    <script>
+        // Function para maglipat ng page at mag-auto play ng kanta
+        function nextPage(pageNumber) {
+            // Itago lahat ng card
+            document.querySelectorAll('.card').forEach(card => card.classList.remove('active'));
+            
+            // Ipakita ang piniling page
+            document.getElementById('page' + pageNumber).classList.add('active');
+            
+            // Automatic Play Music sa unang click ng button (Dahil sa browser rules)
+            const music = document.getElementById('bgMusic');
+            if(music) {
+                music.play().catch(error => console.log("Playback interaction triggers sound."));
+            }
+        }
+
+        // Tagagawa ng Bumabagsak na Lavender Bulaklak at Puso
+        const items = ['🌸', '✨', '❤️', '💜', '💙', '🎈'];
+        function createFallingItem() {
+            const item = document.createElement('div');
+            item.classList.add('falling-item');
+            item.innerHTML = items[Math.floor(Math.random() * items.length)];
+            item.style.left = Math.random() * 100 + 'vw';
+            item.style.animationDuration = Math.random() * 3 + 4 + 's';
+            item.style.fontSize = Math.random() * 15 + 15 + 'px';
+            document.body.appendChild(item);
+            setTimeout(() => { item.remove(); }, 7000);
+        }
+        setInterval(createFallingItem, 400);
+    </script>
+
+</body>
+</html>
+
+
